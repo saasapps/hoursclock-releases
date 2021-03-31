@@ -1,0 +1,9 @@
+version: 1.0.0
+files:
+  - url: hoursclock-1.0.0.AppImage
+    sha512: wJ4wNsz2MeBHGTMQAbYPbckTnirudNuSTU2d/BOFJctws6wauSycTO1PXtpjKOXoglJUiik+iAgd8I2MG5WeMg==
+    size: 84387802
+    blockMapSize: 88046
+path: hoursclock-1.0.0.AppImage
+sha512: wJ4wNsz2MeBHGTMQAbYPbckTnirudNuSTU2d/BOFJctws6wauSycTO1PXtpjKOXoglJUiik+iAgd8I2MG5WeMg==
+releaseDate: '2021-03-31T08:10:39.043Z'
