@@ -1,0 +1,44 @@
+directories:
+  output: release
+  buildResources: resources
+productName: hoursclock
+appId: hoursclock
+files:
+  - filter:
+      - dist/
+      - node_modules/
+      - app.html
+      - main.prod.js
+      - main.prod.js.map
+      - package.json
+      - build/icon.png
+nsis:
+  artifactName: '${productName}-${version}.${ext}'
+mac:
+  icon: build/icon.icns
+  hardenedRuntime: true
+  gatekeeperAssess: false
+  entitlements: build/entitlements.mac.plist
+  entitlementsInherit: build/entitlements.mac.plist
+  target:
+    - dmg
+    - zip
+win:
+  icon: build/icon.png
+  target:
+    - target: nsis
+      arch:
+        - ia32
+        - x64
+linux:
+  target:
+    - deb
+    - rpm
+    - AppImage
+  category: Development
+publish:
+  provider: github
+  owner: electron-react-boilerplate
+  repo: electron-react-boilerplate
+  private: false
+electronVersion: 7.1.4
